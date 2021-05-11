@@ -19,12 +19,12 @@
     },
     "android": {
       "config": {
-        "googleMobileAdsAppId": "ca-app-pub-8226340494391016~6894492514"
+        "googleMobileAdsAppId": "ADMOB_APP_ID"
       },
       "playStoreUrl": "https://play.google.com/store/apps/details?id=app.web.prashoonapps.quizapp",
       "package": "app.web.prashoonapps.quizapp",
       "versionCode": 2,
-      "permissions": [],
+      "permissions": ["SYSTEM_ALERT_WINDOW"],
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
