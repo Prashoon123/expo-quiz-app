@@ -17,9 +17,6 @@ const ScienceNature = ({ navigation }) => {
   useLayoutEffect(() => {
     navigation.setOptions({
       title: "Science & Nature Quiz",
-      headerStyle: { backgroundColor: "#1D2123" },
-      headerTintColor: "white",
-      headerTitleAlign: "center",
     });
   }, [navigation]);
 

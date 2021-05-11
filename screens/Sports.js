@@ -17,9 +17,6 @@ const Sports = ({ navigation }) => {
   useLayoutEffect(() => {
     navigation.setOptions({
       title: "Sports Quiz",
-      headerStyle: { backgroundColor: "#1D2123" },
-      headerTintColor: "white",
-      headerTitleAlign: "center",
     });
   }, [navigation]);
 

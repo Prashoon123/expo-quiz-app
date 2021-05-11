@@ -5,7 +5,6 @@ import { H4 } from "./Text";
 const Option = ({ option, optionStyles, answered, onPress }) => {
   return (
     <TouchableOpacity
-      activeOpacity={0.5}
       onPress={onPress}
       style={[styles.option, optionStyles]}
       disabled={answered ? true : false}

@@ -20,9 +20,6 @@ const Topics = ({ navigation }) => {
   useLayoutEffect(() => {
     navigation.setOptions({
       title: "Topics",
-      headerStyle: { backgroundColor: "#1D2123" },
-      headerTitleStyle: { color: "white" },
-      headerTitleAlign: "center",
       headerLeft: "",
     });
   });

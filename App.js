@@ -14,9 +14,18 @@ import Result from "./screens/Result";
 export default function App() {
   const Stack = createStackNavigator();
 
+  const globalScreenOptions = {
+    headerStyle: { backgroundColor: "#1D2123" },
+    headerTintColor: "white",
+    headerTitleAlign: "center",
+  };
+
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Topics">
+      <Stack.Navigator
+        initialRouteName="Topics"
+        screenOptions={globalScreenOptions}
+      >
         <Stack.Screen component={Topics} name="Topics" />
         <Stack.Screen component={GK} name="GK" />
         <Stack.Screen component={Sports} name="Sports" />

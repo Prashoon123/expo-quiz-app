@@ -21,6 +21,7 @@
       "config": {
         "googleMobileAdsAppId": "ADMOB_APP_ID"
       },
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=app.web.prashoonapps.quizapp",
       "package": "app.web.prashoonapps.quizapp",
       "versionCode": 2,
       "permissions": [],
@@ -31,6 +32,7 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "githubUrl": "https://github.com/Prashoon123/expo-quiz-app"
   }
 }

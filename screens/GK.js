@@ -18,9 +18,6 @@ const GK = ({ navigation }) => {
   useLayoutEffect(() => {
     navigation.setOptions({
       title: "General Knowledge Quiz",
-      headerStyle: { backgroundColor: "#1D2123" },
-      headerTintColor: "white",
-      headerTitleAlign: "center",
     });
   }, [navigation]);
 

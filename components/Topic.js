@@ -8,12 +8,15 @@ const Topic = ({ name, navigation, link }) => {
   const distance = deviceHeight > 700 ? 40 : 20;
   const height = deviceHeight > 700 ? 80 : 70;
 
+  const handleNavigation = () => {
+    navigation.navigate(`${link}`);
+  };
+
   return (
     <>
       <TouchableOpacity
-        activeOpacity={0.5}
         style={[styles.topic, { height: height }]}
-        onPress={() => navigation.navigate(`${link}`)}
+        onPress={handleNavigation}
       >
         <H3 color="black">{name}</H3>
       </TouchableOpacity>

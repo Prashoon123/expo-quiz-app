@@ -9,9 +9,6 @@ const Result = ({ navigation, route }) => {
   useLayoutEffect(() => {
     navigation.setOptions({
       title: "Your score",
-      headerStyle: { backgroundColor: "#1D2123" },
-      headerTintColor: "white",
-      headerTitleAlign: "center",
       headerLeft: "",
     });
   }, [navigation]);
@@ -36,7 +33,9 @@ const Result = ({ navigation, route }) => {
   };
 
   const handleNavigation = async () => {
-    await AdMobInterstitial.setAdUnitID(ADMOB_INTERSTITIAL_AD_KEY); // Test ID - ca-app-pub-3940256099942544/1033173712
+    await AdMobInterstitial.setAdUnitID(
+      ADMOB_INTERSTITIAL_AD_KEY
+    ); // Test ID - ca-app-pub-3940256099942544/1033173712
     await AdMobInterstitial.requestAdAsync({ servePersonalizedAds: true });
     await AdMobInterstitial.showAdAsync();
     navigation.replace("Topics");

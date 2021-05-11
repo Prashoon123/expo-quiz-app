@@ -17,9 +17,6 @@ const VideoGames = ({ navigation }) => {
   useLayoutEffect(() => {
     navigation.setOptions({
       title: "Video Games Quiz",
-      headerStyle: { backgroundColor: "#1D2123" },
-      headerTintColor: "white",
-      headerTitleAlign: "center",
     });
   }, [navigation]);
 
