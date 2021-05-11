@@ -19,7 +19,7 @@
     },
     "android": {
       "config": {
-        "googleMobileAdsAppId": "ADMOB_APP_ID"
+        "googleMobileAdsAppId": "ca-app-pub-8226340494391016~6894492514"
       },
       "playStoreUrl": "https://play.google.com/store/apps/details?id=app.web.prashoonapps.quizapp",
       "package": "app.web.prashoonapps.quizapp",
