@@ -17,9 +17,6 @@ const Computers = ({ navigation }) => {
   useLayoutEffect(() => {
     navigation.setOptions({
       title: "Computers Quiz",
-      headerStyle: { backgroundColor: "#1D2123" },
-      headerTintColor: "white",
-      headerTitleAlign: "center",
     });
   }, [navigation]);
 
