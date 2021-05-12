@@ -4,7 +4,6 @@ import { H1 } from "../components/Text";
 import { LinearGradient } from "expo-linear-gradient";
 import Topic from "../components/Topic";
 import { useLayoutEffect } from "react";
-import { StatusBar } from "expo-status-bar";
 import { AdMobBanner } from "expo-ads-admob";
 import { ADMOB_BANNER_AD_KEY } from "../keys";
 
@@ -36,8 +35,6 @@ const Topics = ({ navigation }) => {
       end={[1, 0]}
       style={styles.container}
     >
-      <StatusBar style="light" />
-
       <View style={{ marginTop: marginTopTextContainer }}>
         <H1 color="white">Quiz App</H1>
       </View>

@@ -16,7 +16,7 @@ const Result = ({ navigation, route }) => {
   const handleShare = async () => {
     try {
       const result = await Share.share({
-        message: `Hi everyone, I scored ${route.params.score}/10 on the quiz app. Even you can play the quiz by installing it from the Google Play Store - https://play.google.com/store/apps/details?id=app.web.prashoonapps.quizapp`,
+        message: `Hi, I scored ${route.params.score}/10 on the quiz app. Even you can play the quiz by installing it from the Google Play Store - https://play.google.com/store/apps/details?id=app.web.prashoonapps.quizapp`,
       });
       if (result.action === Share.sharedAction) {
         if (result.activityType) {
@@ -33,11 +33,11 @@ const Result = ({ navigation, route }) => {
   };
 
   const handleNavigation = async () => {
-    await AdMobInterstitial.setAdUnitID(
-      ADMOB_INTERSTITIAL_AD_KEY
-    ); // Test ID - ca-app-pub-3940256099942544/1033173712
-    await AdMobInterstitial.requestAdAsync({ servePersonalizedAds: true });
-    await AdMobInterstitial.showAdAsync();
+    // await AdMobInterstitial.setAdUnitID(
+    //   ADMOB_INTERSTITIAL_AD_KEY
+    // ); // Test ID - ca-app-pub-3940256099942544/1033173712
+    // await AdMobInterstitial.requestAdAsync({ servePersonalizedAds: true });
+    // await AdMobInterstitial.showAdAsync();
     navigation.replace("Topics");
   };
 

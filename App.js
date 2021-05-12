@@ -10,18 +10,34 @@ import Computers from "./screens/Computers";
 import VideoGames from "./screens/VideoGames";
 import ScienceNature from "./screens/ScienceNature";
 import Result from "./screens/Result";
+import { LinearGradient } from "expo-linear-gradient";
+import { StatusBar } from "expo-status-bar";
 
 export default function App() {
   const Stack = createStackNavigator();
 
   const globalScreenOptions = {
-    headerStyle: { backgroundColor: "#1D2123" },
-    headerTintColor: "white",
+    headerTintColor: "black",
     headerTitleAlign: "center",
+    headerBackground: () => (
+      // <LinearGradient
+      //   colors={["#e65c00", "#f9d423"]}
+      //   style={{ flex: 1 }}
+      //   start={[0, 0]}
+      //   end={[1, 0]}
+      // />
+      <LinearGradient
+        colors={["#acb6e5", "#86fde8"]}
+        style={{ flex: 1 }}
+        start={[0, 0]}
+        end={[1, 0]}
+      />
+    ),
   };
 
   return (
     <NavigationContainer>
+      <StatusBar style="dark" />
       <Stack.Navigator
         initialRouteName="Topics"
         screenOptions={globalScreenOptions}
